@@ -1,0 +1,204 @@
+@use "_mixin.scss" as m;
+
+/* ------------------------------
+header
+------------------------------ */
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 50;
+    background-color: #fff;
+}
+
+.header-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 350px;
+
+    img {
+        width: 100%
+    }
+}
+
+@include m.pc {
+    .logo {
+        width: 240px;
+    }
+}
+
+@include m.sp {
+    .logo {
+        width: 160px;
+    }
+}
+
+.header-right {
+    display: flex;
+}
+
+.header-btn {
+    display: flex;
+    align-items: center;
+}
+
+@include m.pc {
+    .header-btn {
+        display: none;
+    }
+}
+
+.header-link {
+    ul {
+        display: flex;
+    }
+
+    .sns-btn {
+        width: 87px;
+
+        img {
+            width: 100%;
+        }
+
+        a:hover {
+            opacity: 0.8;
+        }
+    }
+}
+
+@include m.pc {
+    .header-link {
+        .sns-btn {
+            width: 60px;
+        }
+    }
+}
+
+@include m.sp {
+    .header-link {
+        .sns-btn {
+            width: 40px;
+        }
+    }
+}
+
+/* ------------------------------
+nav
+------------------------------ */
+#nav {
+    /*   position: relative; */
+    background-color: #0EA5E9;
+}
+
+.nav-menu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    a {
+        color: #fff;
+        font-size: 20px;
+        font-weight: bold;
+
+        &:hover {
+            background-color: #34D399;
+        }
+    }
+
+    .main-menu {
+        display: inline-block;
+        padding: 12px 24px;
+    }
+}
+
+.nav-responsive {
+    display: none;
+}
+
+/* ------------------------------
+ドロップダウン メニューリスト
+------------------------------ */
+
+.dropdown-lists {
+    visibility: hidden;
+    opacity: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #7DD3FC;
+    /*  border: 1px solid red; */
+}
+
+.dropdown-wrapper.active .dropdown-lists {
+    visibility: visible;
+    opacity: 1;
+}
+
+.bottom-lists {
+    position: absolute;
+    top: 200%;
+    left: 0;
+}
+
+.dropdown-list {
+    min-width: 200px;
+    text-align: center;
+    padding: 12px 0;
+
+    &:hover {
+        background-color: #34D399;
+    }
+
+    a::before {
+        content: "●";
+        margin-right: 4px;
+    }
+}
+
+/* ------------------------------
+レスポンシブ時のナビメニュー
+------------------------------ */
+@include m.pc {
+    .nav-menu {
+        display: none;
+    }
+}
+
+.open .nav-responsive {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #7dd3fcf5;
+    padding-top: 60px;
+}
+
+.nav-responsive-wrapper {
+    max-width: 240px;
+    margin-inline: auto;
+    margin-bottom: 8px;
+    padding-inline: 8px;
+
+    a {
+        color: #fff;
+        font-size: 1.6rem;
+        font-weight: bold;
+
+        &::before {
+            content: "●";
+            margin-right: 4px;
+        }
+    }
+}

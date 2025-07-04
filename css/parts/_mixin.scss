@@ -1,0 +1,42 @@
+$pc: 1200px;
+$pc2: 1000px;
+$tab: 700px;
+$mini-tab: 576px;
+$sp: 480px;
+$small-screen: 360px;
+
+@mixin pc {
+    @media screen and (max-width: #{$pc}) {
+        @content;
+    }
+}
+
+@mixin pc2 {
+    @media screen and (max-width: #{$pc2}) {
+        @content;
+    }
+}
+
+@mixin tab {
+    @media screen and (max-width: #{$tab}) {
+        @content;
+    }
+}
+
+@mixin mini-tab {
+    @media screen and (max-width: #{$mini-tab}) {
+        @content;
+    }
+}
+
+@mixin sp {
+    @media screen and (max-width: #{$sp}) {
+        @content;
+    }
+}
+
+@mixin small-screen {
+    @media screen and (max-width: #{$small-screen}) {
+        @content;
+    }
+}

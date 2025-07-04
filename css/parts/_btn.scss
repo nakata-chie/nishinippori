@@ -1,0 +1,110 @@
+@use "_mixin.scss" as m;
+
+/* ------------------------------
+ボタン共通
+------------------------------ */
+.btn {
+    max-width: 340px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #0EA5E9;
+    border: 2px solid #0EA5E9;
+    border-radius: 9999px;
+    padding-block: 16px;
+    transition: all 0.2s ease;
+    margin-inline: auto;
+
+    i {
+        font-size: 1.5em;
+        margin-right: 8px;
+    }
+}
+
+/* ------------------------------
+header-btn
+------------------------------ */
+.campus-btn,
+.contact-btn {
+    width: 300px;
+    height: 60px;
+}
+
+.campus-btn {
+    background-color: #34D399;
+    color: #fff;
+    border: 2px solid #34D399;
+
+    &:hover {
+        color: #34D399;
+        background-color: #fff;
+    }
+}
+
+.contact-btn {
+    background-color: #0EA5E9;
+    color: #fff;
+    border: 2px solid;
+    margin-inline: 1%;
+
+
+    &:hover {
+        color: #0EA5E9;
+        background-color: #fff;
+    }
+}
+
+/* ------------------------------
+contents-btn
+------------------------------ */
+.contents-btn {
+    color: #0EA5E9;
+    border: 2px solid #0EA5E9;
+
+    &:hover {
+        background-color: #0EA5E9;
+        color: #fff;
+    }
+
+    i {
+        margin-right: 8px;
+    }
+}
+
+/* ------------------------------
+アイコンなしボタン
+------------------------------ */
+.sub-btn {
+    max-width: 260px;
+    background-color: #fff;
+
+    &:hover {
+        opacity: 0.8;
+    }
+}
+
+#voice-area {
+    .sub-btn {
+        &:hover {
+            opacity: 0.9;
+        }
+    }
+}
+
+/* ------------------------------
+contactエリアの問い合わせボタン
+------------------------------ */
+.contact-area-btn {
+    max-width: 300px;
+    height: 60px;
+    background-color: #34D399;
+    border: 2px solid;
+    color: #fff;
+
+    &:hover {
+        color: #34D399;
+        background-color: #fff;
+    }
+}
