@@ -125,7 +125,6 @@ nav
 /* ------------------------------
 ドロップダウン メニューリスト
 ------------------------------ */
-
 .dropdown-lists {
     visibility: hidden;
     opacity: 0;
@@ -136,7 +135,6 @@ nav
     top: 100%;
     left: 0;
     background-color: #7DD3FC;
-    /*  border: 1px solid red; */
 }
 
 .dropdown-wrapper.active .dropdown-lists {

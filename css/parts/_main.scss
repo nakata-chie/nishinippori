@@ -276,7 +276,6 @@ contents
     a {
         position: relative;
         display: block;
-        /*  border: 10px solid; */
         border-radius: 30px 0 30px 0;
         padding-block: 32px;
 
@@ -502,10 +501,6 @@ information
     margin-inline: auto;
     margin-bottom: 40px;
 
-    li {
-        margin-block: 16px;
-    }
-
     a {
         font-size: 1.6rem;
         color: #333;
@@ -522,6 +517,20 @@ information
     .article-title {
         padding-block: 16px 4px;
         border-bottom: 2px dotted #0EA5E9;
+    }
+}
+
+.information-list li {
+    margin-block: 16px;
+
+    &:hover {
+        .shine-category {
+            background-color: #0E45E9;
+        }
+
+        .article-title {
+            border-bottom: 3px dotted#0E45E9;
+        }
     }
 }
 
@@ -642,6 +651,21 @@ voice-area
     .voice-items {
         max-width: 90%;
     }
+}
+
+
+#voice-area {
+    .voice-item {
+        background-color: #fff;
+        border-radius: 30px;
+    }
+}
+
+.voice-link {
+    display: block;
+    border-radius: 30px;
+    color: #333;
+    padding: 32px 24px;
 }
 
 /* ------------------------------
@@ -899,6 +923,16 @@ contact
     i {
         font-size: 1em;
         margin-right: 8px;
+    }
+}
+
+.contact-items {
+    a {
+        color: #0EA5E9;
+
+        &:hover {
+            color: #0E45E9;
+        }
     }
 }
 

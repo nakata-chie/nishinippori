@@ -216,8 +216,6 @@ page共通
     }
 }
 
-
-
 /* ------------------------------
 greeting-page
 ------------------------------ */
@@ -323,7 +321,6 @@ graduation-page
         color: #F87171;
     }
 }
-
 
 .graduation-title {
     width: 98%;
@@ -933,6 +930,107 @@ voice-page
     }
 }
  */
+/* ------------------------------
+voice-page
+------------------------------ */
+#voice-block {
+    .voice-items {
+        max-width: 100%;
+    }
+
+    .voice-item {
+        width: 98%;
+        border: 1px solid #e0dfdf;
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.25);
+        margin-bottom: 2%;
+        margin-inline: auto;
+
+        .profile-names {
+            font-weight: bold;
+            color: #0EA5E9;
+        }
+    }
+}
+
+.voice-anchor {
+
+    &::before {
+        content: "";
+        display: block;
+        height: 200px;
+        margin-top: -200px;
+        visibility: hidden;
+    }
+}
+
+@include m.sp {
+    #voice-block {
+        .voice-item {
+            padding-inline: 8px;
+        }
+    }
+}
+
+.profile-block {
+    display: flex;
+    align-items: center;
+    border-bottom: 4px dotted #0EA5E9;
+    padding-bottom: 16px;
+    margin-bottom: 24px;
+
+    img {
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+        border-radius: 15px;
+        margin-right: 16px;
+    }
+}
+
+@include m.tab {
+    .profile-block {
+        flex-direction: column;
+
+        img {
+            width: 80px;
+            height: 80px;
+        }
+    }
+}
+
+.profile-texts {
+    .voice-title {
+        font-size: 2.4rem;
+        font-weight: bold;
+        line-height: 1.2;
+        color: #0EA5E9;
+        margin-bottom: 8px;
+    }
+}
+
+@include m.tab {
+    .profile-texts {
+        .voice-title {
+            font-size: 2rem;
+            margin-top: 16px;
+        }
+    }
+}
+
+.question-answer-title {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.question-text {
+    font-weight: bold;
+    margin-top: 16px;
+}
+
+
+
+
+
 
 /* ------------------------------
 contact-page
@@ -1054,7 +1152,7 @@ input {
     }
 }
 
-/*　選択ボタンエリア */
+/* 選択ボタンエリア */
 .form-flex-area {
 
     label {
