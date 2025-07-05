@@ -64,14 +64,3 @@ i {
 /* ------------------------------
 追加エリア
 ------------------------------ */
-.click-message {
-    text-align: center;
-    margin-bottom: 24px;
-    padding-inline: 2%;
-}
-
-@include m.tab {
-    .click-message {
-        text-align: left;
-    }
-}

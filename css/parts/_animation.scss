@@ -73,9 +73,9 @@
 
 .fadein-title {
     font-family: "Zen Maru Gothic", sans-serif;
-    font-size: 5.6rem;
     font-weight: bold;
-    font-style: normal;
+    font-weight: 700;
+    font-size: 5.6rem;
     color: #00b0ff;
 }
 
@@ -137,6 +137,7 @@
     }
 }
 
+/* informationのタイトルがキラリと光る */
 .shine {
     position: relative;
     background-image: linear-gradient(70deg,

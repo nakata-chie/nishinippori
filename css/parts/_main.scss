@@ -605,6 +605,18 @@ voice-area
     padding-block: 64px;
 }
 
+.click-message {
+    text-align: center;
+    margin-bottom: 24px;
+    padding-inline: 2%;
+}
+
+@include m.tab {
+    .click-message {
+        text-align: left;
+    }
+}
+
 
 .voice-texts {
     border-bottom: 4px dotted #0EA5E9;
