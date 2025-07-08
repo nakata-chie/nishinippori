@@ -139,3 +139,17 @@ $(function () {
   });
 });
 
+$(function () {
+  const width = $(window).width();
+  let bp = 'pc';
+
+  if (width <= 700) bp = 'sp';
+  else if (width <= 1200) bp = 'tab';
+
+  $('.slide-img').each(function () {
+    const $img = $(this);
+    $img.attr('src', $img.data(bp));
+  });
+});
+
+
