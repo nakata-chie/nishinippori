@@ -2639,11 +2639,11 @@ i {
 }
 /* ゆっくり流れるスライダー  */
 .mv-slider {
-  width: 600vw;
+  width: 900vw;
   height: 100%;
   display: flex;
-  -webkit-animation: loop-slide 10s linear 2s infinite;
-  animation: loop-slide 10s linear 2s infinite;
+  -webkit-animation: loop-slide 90s linear 2s infinite;
+  animation: loop-slide 90s linear 2s infinite;
 }
 .mv-slider li {
   width: 100vw;

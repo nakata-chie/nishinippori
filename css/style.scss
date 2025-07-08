@@ -84,11 +84,11 @@ i {
 
 /* ゆっくり流れるスライダー  */
 .mv-slider {
-    width: calc(100vw * 6);
+    width: calc(100vw * 9);
     height: 100%;
     display: flex;
-    -webkit-animation: loop-slide 10s linear 2s infinite;
-    animation: loop-slide 10s linear 2s infinite;
+    -webkit-animation: loop-slide 90s linear 2s infinite;
+    animation: loop-slide 90s linear 2s infinite;
 
     li {
         width: 100vw;
