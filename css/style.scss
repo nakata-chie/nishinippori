@@ -89,6 +89,7 @@ i {
     display: flex;
     -webkit-animation: loop-slide 60s linear 2s infinite;
     animation: loop-slide 60s linear 2s infinite;
+    will-change: transform;
 
     li {
         width: 100vw;
@@ -100,6 +101,9 @@ i {
             height: 100%;
             object-fit: cover;
             display: block;
+            backface-visibility: hidden;
+            -webkit-backface-visibility: hidden;
+            transform: translateZ(0); // GPU強制レンダリング
         }
     }
 }
