@@ -139,3 +139,24 @@ $(function () {
   });
 });
 
+/* 画像の切り替え問題解消 */
+$(function () {
+  let breakpoint;
+  const width = $(window).width();
+
+  if (width <= 700) {
+    breakpoint = 'sp';
+  } else if (width <= 1200) {
+    breakpoint = 'tab';
+  } else {
+    breakpoint = 'pc';
+  }
+
+  $('.slide-img').each(function () {
+    const $img = $(this);
+    const src = $img.data(breakpoint);
+    $img.attr('src', src);
+  });
+});
+
+
