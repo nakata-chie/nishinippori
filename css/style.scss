@@ -84,11 +84,11 @@ i {
 
 /* ゆっくり流れるスライダー  */
 .mv-slider {
-    width: calc(100vw * 3);
+    width: calc(100vw * 6);
     height: 100%;
     display: flex;
-    -webkit-animation: loop-slide 60s linear 2s infinite;
-    animation: loop-slide 60s linear 2s infinite;
+    -webkit-animation: loop-slide 10s linear 2s infinite;
+    animation: loop-slide 10s linear 2s infinite;
 
     li {
         width: 100vw;
@@ -115,7 +115,7 @@ i {
     }
 }
 
-/* .mv-slider {
+.mv-slider {
     .pc-slide-img {
         display: block;
     }
@@ -148,4 +148,4 @@ i {
             display: block;
         }
     }
-} */
+}

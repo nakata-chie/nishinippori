@@ -2639,11 +2639,11 @@ i {
 }
 /* ゆっくり流れるスライダー  */
 .mv-slider {
-  width: 300vw;
+  width: 600vw;
   height: 100%;
   display: flex;
-  -webkit-animation: loop-slide 60s linear 2s infinite;
-  animation: loop-slide 60s linear 2s infinite;
+  -webkit-animation: loop-slide 10s linear 2s infinite;
+  animation: loop-slide 10s linear 2s infinite;
 }
 .mv-slider li {
   width: 100vw;
@@ -2675,38 +2675,28 @@ i {
     transform: translateX(-100%);
   }
 }
-/* .mv-slider {
-    .pc-slide-img {
-        display: block;
-    }
-
-    .tab-slide-img,
-    .sp-slide-img {
-        display: none;
-    }
+.mv-slider .pc-slide-img {
+  display: block;
+}
+.mv-slider .tab-slide-img,
+.mv-slider .sp-slide-img {
+  display: none;
 }
 
-@include m.pc {
-    .mv-slider {
-        .pc-slide-img {
-            display: none;
-        }
-
-        .tab-slide-img {
-            display: block;
-        }
-    }
+@media screen and (max-width: 1200px) {
+  .mv-slider .pc-slide-img {
+    display: none;
+  }
+  .mv-slider .tab-slide-img {
+    display: block;
+  }
 }
-
-@include m.sub-tab {
-    .mv-slider {
-        .tab-slide-img {
-            display: none;
-        }
-
-        .sp-slide-img {
-            display: block;
-        }
-    }
-} */
+@media screen and (max-width: 768px) {
+  .mv-slider .tab-slide-img {
+    display: none;
+  }
+  .mv-slider .sp-slide-img {
+    display: block;
+  }
+}
 /*# sourceMappingURL=style.css.map */
