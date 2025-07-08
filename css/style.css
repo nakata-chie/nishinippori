@@ -965,6 +965,47 @@ rainbowスライダー
 /* ------------------------------
 information
 ------------------------------ */
+/* #information {
+    padding-block: 64px 128px;
+}
+
+.information-list {
+    width: 96%;
+    margin-inline: auto;
+    margin-bottom: 40px;
+
+    a {
+        font-size: 1.6rem;
+        color: #333;
+    }
+
+    .article-category {
+        padding: 4px 16px;
+        background-color: #0EA5E9;
+        border-radius: 5px;
+        color: #fff;
+        margin-left: 16px;
+    }
+
+    .article-title {
+        padding-block: 16px 4px;
+        border-bottom: 2px dotted #0EA5E9;
+    }
+}
+
+.information-list li {
+    margin-block: 16px;
+
+    &:hover {
+        .shine-category {
+            background-color: #0E45E9;
+        }
+
+        .article-title {
+            border-bottom: 3px dotted#0E45E9;
+        }
+    }
+} */
 #information {
   padding-block: 64px 128px;
 }
@@ -983,15 +1024,15 @@ information
   background-color: #0EA5E9;
   border-radius: 5px;
   color: #fff;
-  margin-left: 16px;
+  margin-right: 16px;
 }
 .information-list .article-title {
-  padding-block: 16px 4px;
+  padding-block: 12px 4px;
   border-bottom: 2px dotted #0EA5E9;
 }
 
 .information-list li {
-  margin-block: 16px;
+  margin-block: 16px 24px;
 }
 .information-list li:hover .shine-category {
   background-color: #0E45E9;
