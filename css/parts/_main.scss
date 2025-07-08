@@ -23,6 +23,7 @@
     width: calc(100vw * 3);
     height: 100%;
     display: flex;
+    -webkit-animation: loop-slide 60s linear 2s infinite;
     animation: loop-slide 60s linear 2s infinite;
 
     li {
@@ -607,6 +608,8 @@ voice-area
 
 .click-message {
     text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
     margin-bottom: 24px;
     padding-inline: 2%;
 }
@@ -637,14 +640,19 @@ voice-area
 
 .profile {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
     margin-top: 24px;
 
-    img {
+    .profile-left {
+        display: flex;
+        align-items: center;
+    }
+
+    .face-img {
         width: 80px;
         height: 80px;
-        border-radius: 100%;
+        border-radius: 15px;
         margin-right: 16px;
     }
 
@@ -652,11 +660,27 @@ voice-area
 
         .age,
         .name {
+            display: inline-block;
             font-size: 1.4rem;
             font-weight: bold;
             color: #0EA5E9;
         }
+
+        .name {
+            &::after {
+                content: "・";
+            }
+        }
     }
+
+    .voice-view-btn {
+        width: 30px;
+        height: 30px;
+        object-fit: cover;
+        margin-left: 16px;
+        margin-right: 0;
+    }
+
 }
 
 @include m.tab {
