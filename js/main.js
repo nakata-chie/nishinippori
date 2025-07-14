@@ -9,6 +9,7 @@ $(function () {
     speed: 2000,
     cssEase: 'ease',
     draggable: false, swipe: false,
+    pauseOnHover: false,
     responsive: [
       {
         breakpoint: 700,
@@ -34,6 +35,7 @@ $(function () {
     speed: 1200,
     cssEase: 'ease',
     draggable: false, swipe: false,
+    pauseOnHover: false,
     responsive: [
       {
         breakpoint: 700,

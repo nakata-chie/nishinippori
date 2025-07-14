@@ -44,14 +44,14 @@ header-btn
 }
 
 .contact-btn {
-    background-color: #0EA5E9;
+    background-color: #34D399;
     color: #fff;
-    border: 2px solid;
-    margin-inline: 1%;
+    border: 2px solid #34D399;
+    margin-inline: 5%;
 
 
     &:hover {
-        color: #0EA5E9;
+        color: #34D399;
         background-color: #fff;
     }
 }
@@ -59,7 +59,7 @@ header-btn
 /* ------------------------------
 contents-btn
 ------------------------------ */
-.contents-btn {
+/* .contents-btn {
     color: #0EA5E9;
     border: 2px solid #0EA5E9;
 
@@ -71,7 +71,7 @@ contents-btn
     i {
         margin-right: 8px;
     }
-}
+} */
 
 /* ------------------------------
 アイコンなしボタン

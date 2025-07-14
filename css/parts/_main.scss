@@ -1,15 +1,20 @@
 @use "_mixin.scss" as m;
 
-
-
 /* ------------------------------
 西日暮里キャンパスメッセージ
 ------------------------------ */
 #message-area {
     background-color: #E8F0FB;
-    margin-block: 72px 0;
+    margin-top: 72px;
     padding: 80px 3%;
     border-radius: 15px;
+}
+
+@include m.sp {
+    #message-area {
+        margin-top: 40px;
+        padding-block: 40px;
+    }
 }
 
 .message-texts {
@@ -78,11 +83,17 @@
     padding-block: 64px 128px;
 }
 
+@include m.sp {
+    #point {
+        padding-bottom: 0px;
+    }
+}
+
 .point-content {
     display: flex;
     background-color: #fff;
     border-radius: 30px;
-    margin-bottom: 48px;
+    margin-bottom: 40px;
 }
 
 .point-img {
@@ -190,9 +201,9 @@ contents
     padding-block: 64px 128px;
 }
 
-@include m.pc {
+@include m.sp {
     #contents {
-        padding-block: 64px;
+        padding-block: 40px;
     }
 }
 
@@ -495,6 +506,12 @@ information
     padding-block: 64px 128px;
 }
 
+@include m.sp {
+    #information {
+        padding-bottom: 40px;
+    }
+}
+
 .information-list {
     width: 96%;
     margin-inline: auto;
@@ -542,6 +559,13 @@ movie
     background-color: #E8F0FB;
     text-align: center;
 }
+
+@include m.sp {
+    #movie {
+        padding-block: 40px;
+    }
+}
+
 
 .youtube-inner {
     max-width: 800px;
@@ -603,6 +627,12 @@ voice-area
 #voice-area {
     background-color: #0EA5E9;
     padding-block: 64px;
+}
+
+@include m.sp {
+    #voice-area {
+        padding-block: 40px;
+    }
 }
 
 .click-message {
@@ -679,7 +709,6 @@ voice-area
         margin-left: 16px;
         margin-right: 0;
     }
-
 }
 
 @include m.tab {
@@ -802,6 +831,12 @@ accordion
 ------------------------------ */
 #question {
     padding-block: 64px;
+}
+
+@include m.sp {
+    #question {
+        padding-block: 40px;
+    }
 }
 
 .learning_edition {

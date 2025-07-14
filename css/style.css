@@ -30,13 +30,13 @@
   0% {
     opacity: 0;
   }
-  8% {
+  10% {
     opacity: 1;
   }
   18% {
     opacity: 1;
   }
-  26% {
+  27% {
     opacity: 0;
   }
   100% {
@@ -48,13 +48,13 @@
   0% {
     opacity: 0;
   }
-  8% {
+  10% {
     opacity: 1;
   }
   18% {
     opacity: 1;
   }
-  26% {
+  27% {
     opacity: 0;
   }
   100% {
@@ -86,8 +86,10 @@
   /* font-family: "Zen Maru Gothic", sans-serif;
   font-weight: bold;
   font-weight: 700; */
-  font-family: "M PLUS Rounded 1c", sans-serif;
-  font-weight: 700;
+  /*  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-weight: 700; */
+  font-family: "Zen Maru Gothic", sans-serif;
+  font-weight: 900;
   font-size: 5.6rem;
   color: #00b0ff;
 }
@@ -103,16 +105,33 @@
     height: 48%;
   }
   .fadein-title {
+    font-size: 7rem;
+  }
+  .small-text {
+    font-size: 4.8rem;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .mv-text {
+    width: 80%;
+    height: 48%;
+  }
+  .fadein-title {
     font-size: 4.8rem;
   }
   .small-text {
     font-size: 4rem;
   }
 }
+@media screen and (max-width: 768px) {
+  .mv-text {
+    width: 88%;
+    height: 24%;
+  }
+}
 @media screen and (max-width: 700px) {
   .mv-text {
-    width: 90%;
-    height: 24%;
+    width: 94%;
   }
   .fadein-title {
     font-size: 4rem;
@@ -123,16 +142,13 @@
 }
 @media screen and (max-width: 480px) {
   .fadein-title {
-    font-size: 3rem;
+    font-size: 3.1rem;
   }
   .small-text {
-    font-size: 2.4rem;
+    font-size: 2.8rem;
   }
 }
 @media screen and (max-width: 360px) {
-  .mv-text {
-    height: 24%;
-  }
   .fadein-title {
     font-size: 2rem;
   }
@@ -208,31 +224,32 @@ header-btn
 }
 
 .contact-btn {
-  background-color: #0EA5E9;
+  background-color: #34D399;
   color: #fff;
-  border: 2px solid;
-  margin-inline: 1%;
+  border: 2px solid #34D399;
+  margin-inline: 5%;
 }
 .contact-btn:hover {
-  color: #0EA5E9;
+  color: #34D399;
   background-color: #fff;
 }
 
 /* ------------------------------
 contents-btn
 ------------------------------ */
-.contents-btn {
-  color: #0EA5E9;
-  border: 2px solid #0EA5E9;
-}
-.contents-btn:hover {
-  background-color: #0EA5E9;
-  color: #fff;
-}
-.contents-btn i {
-  margin-right: 8px;
-}
+/* .contents-btn {
+    color: #0EA5E9;
+    border: 2px solid #0EA5E9;
 
+    &:hover {
+        background-color: #0EA5E9;
+        color: #fff;
+    }
+
+    i {
+        margin-right: 8px;
+    }
+} */
 /* ------------------------------
 アイコンなしボタン
 ------------------------------ */
@@ -529,11 +546,17 @@ nav
 ------------------------------ */
 #message-area {
   background-color: #E8F0FB;
-  margin-block: 72px 0;
+  margin-top: 72px;
   padding: 80px 3%;
   border-radius: 15px;
 }
 
+@media screen and (max-width: 480px) {
+  #message-area {
+    margin-top: 40px;
+    padding-block: 40px;
+  }
+}
 .message-texts {
   margin-bottom: 40px;
 }
@@ -593,11 +616,16 @@ nav
   padding-block: 64px 128px;
 }
 
+@media screen and (max-width: 480px) {
+  #point {
+    padding-bottom: 0px;
+  }
+}
 .point-content {
   display: flex;
   background-color: #fff;
   border-radius: 30px;
-  margin-bottom: 48px;
+  margin-bottom: 40px;
 }
 
 .point-img {
@@ -690,9 +718,9 @@ contents
   padding-block: 64px 128px;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 480px) {
   #contents {
-    padding-block: 64px;
+    padding-block: 40px;
   }
 }
 .contents-lists {
@@ -959,6 +987,11 @@ information
   padding-block: 64px 128px;
 }
 
+@media screen and (max-width: 480px) {
+  #information {
+    padding-bottom: 40px;
+  }
+}
 .information-list {
   width: 96%;
   margin-inline: auto;
@@ -999,6 +1032,11 @@ movie
   text-align: center;
 }
 
+@media screen and (max-width: 480px) {
+  #movie {
+    padding-block: 40px;
+  }
+}
 .youtube-inner {
   max-width: 800px;
   border-radius: 40px;
@@ -1051,6 +1089,11 @@ voice-area
   padding-block: 64px;
 }
 
+@media screen and (max-width: 480px) {
+  #voice-area {
+    padding-block: 40px;
+  }
+}
 .click-message {
   text-align: center;
   font-size: 2rem;
@@ -1215,6 +1258,11 @@ accordion
   padding-block: 64px;
 }
 
+@media screen and (max-width: 480px) {
+  #question {
+    padding-block: 40px;
+  }
+}
 .learning_edition {
   margin-bottom: 56px;
 }
@@ -1709,6 +1757,9 @@ page共通
 }
 
 @media screen and (max-width: 480px) {
+  .sec-title {
+    margin-block: 0 40px;
+  }
   .sec-title .main-title {
     font-size: 4rem;
   }
@@ -1796,6 +1847,7 @@ course-page
   margin-top: 40px;
   padding-bottom: 40px;
 }
+
 @media screen and (max-width: 480px) {
   #course .border-light {
     border: none;
@@ -1804,7 +1856,6 @@ course-page
     padding-bottom: 0;
   }
 }
-
 .course-image {
   width: 98%;
   margin-inline: auto;
@@ -2269,45 +2320,6 @@ single-page
 }
 
 /* ------------------------------
-cost-page
------------------------------- */
-#cost .page-message-title {
-  text-align: left;
-  font-size: 2rem;
-  margin-block: 32px 8px;
-}
-#cost .sec-title {
-  margin-block: 32px;
-  padding-inline: 2%;
-}
-
-@media screen and (max-width: 480px) {
-  #cost .border-light {
-    border: none;
-  }
-}
-table {
-  width: 98%;
-  border-collapse: collapse;
-  font-size: 1.6rem;
-  margin-inline: auto;
-}
-table:nth-of-type(n+3) {
-  margin-top: 32px;
-}
-
-th,
-td {
-  border: 1px solid;
-  padding: 8px;
-}
-
-.red-red {
-  border: 3px solid;
-  background: green;
-}
-
-/* ------------------------------
 voice-page
 ------------------------------ */
 /* #voice-block {
@@ -2558,9 +2570,14 @@ textarea {
 .submit-btn .form-btn {
   display: inline-block;
   background-color: #ff8ba7;
+  border: 2px solid #ff8ba7;
   color: #fff;
   padding: 16px 32px;
   border-radius: 9999px;
+}
+.submit-btn .form-btn:hover {
+  background-color: #fff;
+  color: #ff8ba7;
 }
 
 .input-column {
@@ -2587,6 +2604,10 @@ img {
 }
 
 ul {
+  list-style: none;
+}
+
+ol {
   list-style: none;
 }
 
@@ -2701,5 +2722,185 @@ i {
   .mv-slider .sp-slide-img {
     display: block;
   }
+}
+/* ------------------------------
+cost-page
+------------------------------ */
+#cost .page-text {
+  margin-top: 0;
+}
+
+.admission-flow {
+  display: flex;
+}
+
+@media screen and (max-width: 1000px) {
+  .admission-flow {
+    flex-direction: column;
+  }
+}
+.flow-left {
+  width: 30%;
+  padding: 2%;
+}
+
+.flow-step {
+  position: relative;
+}
+.flow-step::before {
+  content: " ";
+  width: 30px;
+  height: 90%;
+  background-color: #6fcaf4;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.flow-step::after {
+  content: " ";
+  position: absolute;
+  bottom: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-top: 30px solid #6fcaf4;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  z-index: 0;
+}
+.flow-step li {
+  text-align: center;
+  background-color: #0EA5E9;
+  position: relative;
+  z-index: 1;
+  border-radius: 5px;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #fff;
+  margin-inline: auto;
+  margin-bottom: 100px;
+  padding-block: 8px;
+  padding-inline: 8px;
+}
+
+@media screen and (max-width: 1000px) {
+  .flow-step li {
+    margin-bottom: 40px;
+  }
+  .flow-step::before {
+    height: 88%;
+  }
+  .flow-step::after {
+    bottom: 45px;
+    border-top: 25px solid #6fcaf4;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+  }
+}
+.flow-right {
+  width: 70%;
+  padding: 2%;
+}
+
+@media screen and (max-width: 1000px) {
+  .flow-left,
+.flow-right {
+    width: 100%;
+  }
+}
+/* 右側共通装飾 */
+.application-bg-blue {
+  background-color: rgba(14, 165, 233, 0.3137254902);
+}
+
+.bbp {
+  border: 1px solid;
+  border-radius: 5px;
+  margin-top: 16px;
+  padding: 2%;
+}
+
+.mt-none {
+  margin-top: 0;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.flow-text {
+  border: 3px dotted #0EA5E9;
+  border-radius: 5px;
+  padding: 2%;
+}
+
+/* 出願 */
+.application {
+  display: flex;
+  gap: 2%;
+}
+
+.application-left,
+.application-right {
+  width: 50%;
+  background-color: rgba(14, 165, 233, 0.3137254902);
+}
+
+@media screen and (max-width: 700px) {
+  .application {
+    flex-direction: column;
+  }
+  .application-left,
+.application-right {
+    width: 100%;
+  }
+}
+.application-title {
+  text-align: center;
+}
+
+#cost .page-message-title {
+  text-align: left;
+  font-size: 2rem;
+  margin-block: 32px 8px;
+}
+#cost .sec-title {
+  margin-block: 32px;
+  padding-inline: 2%;
+}
+
+#cost .other-texts .page-message-title {
+  margin-bottom: 2px;
+}
+
+@media screen and (max-width: 480px) {
+  #cost .border-light {
+    border: none;
+  }
+}
+table {
+  width: 98%;
+  border-collapse: collapse;
+  font-size: 1.6rem;
+  margin-inline: auto;
+}
+
+th,
+td {
+  border: 1px solid;
+  padding: 8px;
+}
+
+.border-top-none {
+  border-top: none;
+}
+
+.red-red {
+  border: 3px solid;
+  background: green;
+}
+
+.other-course {
+  border-top: none;
 }
 /*# sourceMappingURL=style.css.map */

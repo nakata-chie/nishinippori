@@ -30,6 +30,10 @@ ul {
     list-style: none;
 }
 
+ol {
+    list-style: none;
+}
+
 a {
     text-decoration: none;
 }
@@ -148,4 +152,213 @@ i {
             display: block;
         }
     }
+}
+
+/* ------------------------------
+cost-page
+------------------------------ */
+#cost {
+    .page-text {
+        margin-top: 0;
+    }
+}
+
+.admission-flow {
+    display: flex;
+}
+
+@include m.pc2 {
+    .admission-flow {
+        flex-direction: column;
+    }
+}
+
+.flow-left {
+    width: 30%;
+    padding: 2%;
+}
+
+.flow-step {
+    position: relative;
+
+    &::before {
+        content: " ";
+        width: 30px;
+        height: 90%;
+        background-color: #6fcaf4;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    &::after {
+        content: " ";
+        position: absolute;
+        bottom: 60px;
+        left: 50%;
+        transform: translateX(-50%);
+        border-top: 30px solid #6fcaf4;
+        border-left: 40px solid transparent;
+        border-right: 40px solid transparent;
+        z-index: 0;
+    }
+
+    li {
+        text-align: center;
+        background-color: #0EA5E9;
+        position: relative;
+        z-index: 1;
+        border-radius: 5px;
+        font-size: 1.6rem;
+        font-weight: 700;
+        color: #fff;
+        margin-inline: auto;
+        margin-bottom: 100px;
+        padding-block: 8px;
+        padding-inline: 8px;
+    }
+}
+
+@include m.pc2 {
+    .flow-step {
+        li {
+            margin-bottom: 40px;
+        }
+
+        &::before {
+            height: 88%;
+        }
+
+        &::after {
+            bottom: 45px;
+            border-top: 25px solid #6fcaf4;
+            border-left: 30px solid transparent;
+            border-right: 30px solid transparent;
+        }
+    }
+
+}
+
+.flow-right {
+    width: 70%;
+    padding: 2%;
+}
+
+@include m.pc2 {
+
+    .flow-left,
+    .flow-right {
+        width: 100%;
+    }
+}
+
+
+/* 右側共通装飾 */
+.application-bg-blue {
+    background-color: #0EA5E950;
+}
+
+.bbp {
+    border: 1px solid;
+    border-radius: 5px;
+    margin-top: 16px;
+    padding: 2%;
+}
+
+.mt-none {
+    margin-top: 0;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.flow-text {
+    border: 3px dotted #0EA5E9;
+    border-radius: 5px;
+    padding: 2%;
+}
+
+/* 出願 */
+.application {
+    display: flex;
+    gap: 2%;
+}
+
+
+.application-left,
+.application-right {
+    width: 50%;
+    background-color: #0EA5E950;
+}
+
+@include m.tab {
+    .application {
+        flex-direction: column;
+    }
+
+    .application-left,
+    .application-right {
+        width: 100%;
+    }
+}
+
+.application-title {
+    text-align: center;
+}
+
+#cost {
+    .page-message-title {
+        text-align: left;
+        font-size: 2rem;
+        margin-block: 32px 8px;
+    }
+
+    .sec-title {
+        margin-block: 32px;
+        padding-inline: 2%;
+    }
+}
+
+#cost {
+    .other-texts {
+        .page-message-title {
+            margin-bottom: 2px;
+        }
+    }
+}
+
+@include m.sp {
+    #cost {
+        .border-light {
+            border: none;
+        }
+    }
+}
+
+table {
+    width: 98%;
+    border-collapse: collapse;
+    font-size: 1.6rem;
+    margin-inline: auto;
+}
+
+th,
+td {
+    border: 1px solid;
+    padding: 8px;
+}
+
+.border-top-none {
+    border-top: none;
+}
+
+.red-red {
+    border: 3px solid;
+    background: green;
+}
+
+.other-course {
+    border-top: none;
 }

@@ -32,7 +32,7 @@
         opacity: 0;
     }
 
-    8% {
+    10% {
         opacity: 1;
     }
 
@@ -40,7 +40,7 @@
         opacity: 1;
     }
 
-    26% {
+    27% {
         opacity: 0;
     }
 
@@ -75,8 +75,10 @@
     /* font-family: "Zen Maru Gothic", sans-serif;
     font-weight: bold;
     font-weight: 700; */
-    font-family: 'M PLUS Rounded 1c', sans-serif;
-    font-weight: 700;
+    /*  font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-weight: 700; */
+    font-family: "Zen Maru Gothic", sans-serif;
+    font-weight: 900;
     font-size: 5.6rem;
     color: #00b0ff;
 }
@@ -94,6 +96,22 @@
     }
 
     .fadein-title {
+        font-size: 7rem;
+    }
+
+    .small-text {
+        font-size: 4.8rem;
+    }
+}
+
+@include m.pc2 {
+
+    .mv-text {
+        width: 80%;
+        height: 48%;
+    }
+
+    .fadein-title {
         font-size: 4.8rem;
     }
 
@@ -102,11 +120,17 @@
     }
 }
 
+@include m.sub-tab {
+    .mv-text {
+        width: 88%;
+        height: 24%;
+    }
+}
+
 @include m.tab {
 
     .mv-text {
-        width: 90%;
-        height: 24%;
+        width: 94%;
     }
 
     .fadein-title {
@@ -121,19 +145,15 @@
 @include m.sp {
 
     .fadein-title {
-        font-size: 3rem;
+        font-size: 3.1rem;
     }
 
     .small-text {
-        font-size: 2.4rem;
+        font-size: 2.8rem;
     }
 }
 
 @include m.small-screen {
-    .mv-text {
-        height: 24%;
-    }
-
     .fadein-title {
         font-size: 2rem;
     }

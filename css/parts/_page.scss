@@ -158,6 +158,8 @@ page共通
 
 @include m.sp {
     .sec-title {
+        margin-block: 0 40px;
+
         .main-title {
             font-size: 4rem;
         }
@@ -247,7 +249,6 @@ course-page
         background-color: #FDBA74;
     }
 
-
     .sub-btn {
         margin-top: 32px;
     }
@@ -257,8 +258,10 @@ course-page
         margin-top: 40px;
         padding-bottom: 40px;
     }
+}
 
-    @include m.sp {
+@include m.sp {
+    #course {
         .border-light {
             border: none;
 
@@ -856,51 +859,7 @@ single-page
     font-size: 1.6rem;
 }
 
-/* ------------------------------
-cost-page
------------------------------- */
-#cost {
-    .page-message-title {
-        text-align: left;
-        font-size: 2rem;
-        margin-block: 32px 8px;
-    }
 
-    .sec-title {
-        margin-block: 32px;
-        padding-inline: 2%;
-    }
-}
-
-@include m.sp {
-    #cost {
-        .border-light {
-            border: none;
-        }
-    }
-}
-
-table {
-    width: 98%;
-    border-collapse: collapse;
-    font-size: 1.6rem;
-    margin-inline: auto;
-
-    &:nth-of-type(n+3) {
-        margin-top: 32px;
-    }
-}
-
-th,
-td {
-    border: 1px solid;
-    padding: 8px;
-}
-
-.red-red {
-    border: 3px solid;
-    background: green;
-}
 
 /* ------------------------------
 voice-page
@@ -1026,11 +985,6 @@ voice-page
     font-weight: bold;
     margin-block: 16px 4px;
 }
-
-
-
-
-
 
 /* ------------------------------
 contact-page
@@ -1185,9 +1139,15 @@ textarea {
     .form-btn {
         display: inline-block;
         background-color: #ff8ba7;
+        border: 2px solid #ff8ba7;
         color: #fff;
         padding: 16px 32px;
         border-radius: 9999px;
+
+        &:hover {
+            background-color: #fff;
+            color: #ff8ba7;
+        }
     }
 }
 
