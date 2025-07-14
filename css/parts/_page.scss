@@ -752,10 +752,19 @@ campus-page
             padding-top: 32px;
         }
     }
+
+    .border-light {
+        margin-top: 0;
+        padding-bottom: 0;
+    }
 }
 
 @include m.sp {
     #campus {
+        .sec-title {
+            margin-block: 0;
+        }
+
         .border-light {
             border: none;
         }
