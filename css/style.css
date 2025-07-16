@@ -1010,7 +1010,7 @@ information
 }
 .information-list .article-title {
   padding-block: 12px 4px;
-  border-bottom: 2px dotted #0EA5E9;
+  border-bottom: 3px dotted #0EA5E9;
 }
 
 .information-list li {
@@ -2909,5 +2909,10 @@ td {
 
 .other-course {
   border-top: none;
+}
+
+/* voiceスライド */
+.voice-items {
+  margin-bottom: 40px;
 }
 /*# sourceMappingURL=style.css.map */
