@@ -7,7 +7,8 @@ $(function () {
     autoplay: true,
     autoplaySpeed: 1000,
     speed: 2000,
-    cssEase: 'ease',
+    cssEase: 'linear',
+    infinite: true, //  明示的に指定
     draggable: false, swipe: false,
     pauseOnHover: false,
     responsive: [
@@ -16,13 +17,12 @@ $(function () {
         settings: {
           slidesToShow: 3,
           slidesToScroll: 3,
-          speed: 1500,
+          infinite: true, //  明示的に指定
         },
       },
     ],
   });
 });
-
 
 //rainbowエリア一個ずつスライド
 $(function () {
@@ -54,7 +54,7 @@ $(function () {
   let autoPlayTimer = null;
 
   $slider.slick({
-    dots: true,
+    dots: false,
     slidesToShow: 3,
     slidesToScroll: 1,
     speed: 1000,
