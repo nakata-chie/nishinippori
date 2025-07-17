@@ -5,8 +5,8 @@ $(function () {
     slidesToShow: 6,
     slidesToScroll: 6,
     autoplay: true,
-    autoplaySpeed: 1000,
-    speed: 2000,
+    autoplaySpeed: 2500,
+    speed: 2500,
     cssEase: 'linear',
     infinite: true, //  明示的に指定
     draggable: false, swipe: false,
