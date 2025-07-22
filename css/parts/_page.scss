@@ -1,225 +1,7 @@
 @use "_mixin.scss" as m;
 
 /* ------------------------------
-page共通
------------------------------- */
-#access,
-#activity,
-#course,
-#graduation,
-#greeting,
-#life,
-#single,
-#picup,
-#support,
-#campus,
-#article,
-#contact-form,
-#cost,
-#voice {
-    padding-block: 40px;
-}
-
-.page-wrapper {
-    max-width: 90%;
-    background-color: #fff;
-    margin-inline: auto;
-    padding-inline: 2%;
-}
-
-.page-visual {
-    width: 98%;
-    margin-inline: auto;
-
-    img {
-        width: 100%;
-    }
-}
-
-/* 太帯・黒太文字 */
-.page-title {
-    width: 98%;
-    text-align: center;
-    background-color: #0EA5E9;
-    font-size: 3rem;
-    font-weight: bold;
-    color: #333;
-    border-radius: 10px;
-    padding-block: 8px;
-    padding-inline: 2%;
-    margin-bottom: 32px;
-    margin-inline: auto;
-}
-
-/* 太帯・白太文字 */
-.page-sub-title {
-    width: 98%;
-    text-align: center;
-    background-color: #0EA5E9;
-    font-size: 2.4rem;
-    font-weight: bold;
-    color: #fff;
-    border-radius: 10px;
-    padding-block: 8px;
-    margin-inline: auto;
-    margin-block: 32px;
-}
-
-/* 太帯・白文字 */
-.page-sub-title-light {
-    width: 98%;
-    text-align: center;
-    background-color: #FDBA74;
-    font-size: 1.8rem;
-    color: #fff;
-    border-radius: 10px;
-    padding-block: 8px;
-    margin-inline: auto;
-    margin-block: 32px;
-}
-
-/* デフォルトの文字 */
-.page-text {
-    width: 98%;
-    font-size: 1.6rem;
-    margin-top: 24px;
-    margin-inline: auto;
-}
-
-/* 外側の線デフォルト */
-.border-light {
-    border: 1px solid #0EA5E9;
-    padding-bottom: 40px;
-    margin-top: 40px;
-
-    &:last-of-type {
-        margin-bottom: 0;
-    }
-}
-
-/* ・始まりリスト */
-.normal-list {
-    width: 96%;
-    list-style: inside;
-    font-size: 1.6rem;
-    margin-inline: auto;
-}
-
-/* ・始まり色付きリスト */
-.color-list {
-    width: 98%;
-    font-size: 2rem;
-    font-weight: bold;
-    margin-bottom: 4px;
-    margin-inline: auto;
-
-
-    &::before {
-        content: "・";
-        color: #FDE047;
-    }
-}
-
-/* 色付きリストの文章エリア */
-.list-texts {
-    margin-bottom: 32px;
-
-    .page-text {
-        margin-top: 0;
-    }
-}
-
-/* ------------------------------
-タイトル
------------------------------- */
-.sec-title {
-    text-align: center;
-    margin-block: 64px;
-
-    span {
-        display: block;
-    }
-
-    .main-title {
-        font-size: 4.8rem;
-        border-bottom: 4px dotted #0EA5E9;
-    }
-
-    .ja {
-        border-bottom: 4px dotted #fff;
-    }
-
-    .sub-title {
-        font-size: 2.4rem;
-        font-weight: normal;
-        margin-top: 8px;
-    }
-}
-
-@include m.sp {
-    .sec-title {
-        margin-block: 0 40px;
-
-        .main-title {
-            font-size: 4rem;
-        }
-
-        .sub-title {
-            font-size: 2rem;
-        }
-    }
-}
-
-/* ------------------------------
-花の背景装飾
------------------------------- */
-.bg {
-    background-repeat: repeat;
-    background-size: auto;
-    /* 必要に応じて contain / cover */
-    background-position: center;
-}
-
-.bg-blue {
-    background-image: url("../img/bg-blue.png");
-}
-
-.bg-orange {
-    background-image: url("../img/bg-orange.png");
-}
-
-.bg-green {
-    background-image: url("../img/bg-green.png");
-}
-
-.bg-pink {
-    background-image: url("../img/bg-pink.png");
-}
-
-.p-block {
-    padding-block: 200px 40px;
-}
-
-@include m.pc {
-    .p-block {
-        padding-block: 140px 40px;
-    }
-}
-
-@include m.tab {
-    .p-block {
-        padding-block: 100px 40px;
-    }
-}
-
-@include m.sp {
-    .p-block {
-        padding-block: 80px 40px;
-    }
-}
-
-/* ------------------------------
-greeting-page
+greeting-page(挨拶)
 ------------------------------ */
 .greeting-mainvisuasl,
 .greeting-message {
@@ -232,7 +14,7 @@ greeting-page
 }
 
 /* ------------------------------
-course-page
+course-page(コース案内)
 ------------------------------ */
 #course {
     .page-title {
@@ -296,7 +78,7 @@ course-page
 }
 
 /* ------------------------------
-graduation-page
+graduation-page(卒業案内)
 ------------------------------ */
 #graduation {
 
@@ -354,7 +136,7 @@ graduation-page
 }
 
 /* ------------------------------
-activity-page
+activity-page(特別活動)
 ------------------------------ */
 #activity {
     .page-title {
@@ -514,7 +296,7 @@ activity-page
 }
 
 /* ------------------------------
-life-page
+life-page(学校生活)
 ------------------------------ */
 #life {
     .page-title {
@@ -558,7 +340,7 @@ life-page
 }
 
 /* ------------------------------
-support-page
+support-page(サポート)
 ------------------------------ */
 #support {
     .page-title {
@@ -587,7 +369,7 @@ support-page
 }
 
 /* ------------------------------
-access-page
+access-page(アクセス)
 ------------------------------ */
 #access {
     .page-title {
@@ -695,7 +477,7 @@ access-page
 }
 
 /* ------------------------------
-picup-page
+picup-page(送迎・訪問)
 ------------------------------ */
 #picup {
     .page-title {
@@ -737,7 +519,7 @@ picup-page
 }
 
 /* ------------------------------
-campus-page
+campus-page(記事)
 ------------------------------ */
 #campus {
     padding-bottom: 40px;
@@ -837,7 +619,7 @@ campus-page
 }
 
 /* ------------------------------
-single-page
+single-page(記事詳細)
 ------------------------------ */
 #article {
     .sub-btn {
@@ -868,136 +650,8 @@ single-page
     font-size: 1.6rem;
 }
 
-
-
 /* ------------------------------
-voice-page
------------------------------- */
-/* #voice-block {
-    .voice-items {
-        max-width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        gap: 2%;
-    }
-
-    .voice-item {
-        width: 49%;
-        border: 1px solid #e0dfdf;
-        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.25);
-        margin-bottom: 2%;
-    }
-}
-
-@include m.tab {
-    #voice-block {
-        .voice-item {
-            width: 100%;
-        }
-    }
-}
- */
-/* ------------------------------
-voice-page
------------------------------- */
-#voice-block {
-    .voice-items {
-        max-width: 100%;
-    }
-
-    .voice-item {
-        width: 98%;
-        border: 1px solid #e0dfdf;
-        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.25);
-        margin-bottom: 40px;
-        margin-inline: auto;
-        padding-block: 52px;
-
-        .profile-names {
-            font-weight: bold;
-            color: #0EA5E9;
-        }
-    }
-}
-
-.voice-anchor {
-
-    &::before {
-        content: "";
-        display: block;
-        height: 200px;
-        margin-top: -200px;
-        visibility: hidden;
-    }
-}
-
-@include m.sp {
-    #voice-block {
-        .voice-item {
-            padding-inline: 8px;
-        }
-    }
-}
-
-.profile-block {
-    display: flex;
-    align-items: center;
-    border-bottom: 4px dotted #0EA5E9;
-    padding-bottom: 16px;
-    margin-bottom: 24px;
-
-    img {
-        width: 100px;
-        height: 100px;
-        object-fit: cover;
-        border-radius: 15px;
-        margin-right: 16px;
-    }
-}
-
-@include m.tab {
-    .profile-block {
-        flex-direction: column;
-
-        img {
-            width: 80px;
-            height: 80px;
-        }
-    }
-}
-
-.profile-texts {
-    .voice-title {
-        font-size: 2.4rem;
-        font-weight: bold;
-        line-height: 1.2;
-        color: #0EA5E9;
-        margin-bottom: 8px;
-    }
-}
-
-@include m.tab {
-    .profile-texts {
-        .voice-title {
-            font-size: 2rem;
-            margin-top: 16px;
-        }
-    }
-}
-
-.question-answer-title {
-    font-size: 2rem;
-    font-weight: bold;
-}
-
-.question-text {
-    font-weight: bold;
-    margin-block: 16px 4px;
-}
-
-/* ------------------------------
-contact-page
+contact-page(お問い合わせ)
 ------------------------------ */
 #contact-form {
     @include m.sp {
@@ -1163,4 +817,213 @@ textarea {
 
 .input-column {
     width: 100%;
+}
+
+/* ------------------------------
+cost-page(入学案内)
+------------------------------ */
+#cost {
+    .page-text {
+        margin-top: 0;
+    }
+}
+
+.admission-flow {
+    display: flex;
+}
+
+@include m.pc2 {
+    .admission-flow {
+        flex-direction: column;
+    }
+}
+
+.flow-left {
+    width: 30%;
+    padding: 2%;
+}
+
+.flow-step {
+    position: relative;
+
+    &::before {
+        content: " ";
+        width: 30px;
+        height: 90%;
+        background-color: #6fcaf4;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    &::after {
+        content: " ";
+        position: absolute;
+        bottom: 60px;
+        left: 50%;
+        transform: translateX(-50%);
+        border-top: 30px solid #6fcaf4;
+        border-left: 40px solid transparent;
+        border-right: 40px solid transparent;
+        z-index: 0;
+    }
+
+    li {
+        text-align: center;
+        background-color: #0EA5E9;
+        position: relative;
+        z-index: 1;
+        border-radius: 5px;
+        font-size: 1.6rem;
+        font-weight: 700;
+        color: #fff;
+        margin-inline: auto;
+        margin-bottom: 100px;
+        padding-block: 8px;
+        padding-inline: 8px;
+    }
+}
+
+@include m.pc2 {
+    .flow-step {
+        li {
+            margin-bottom: 40px;
+        }
+
+        &::before {
+            height: 88%;
+        }
+
+        &::after {
+            bottom: 45px;
+            border-top: 25px solid #6fcaf4;
+            border-left: 30px solid transparent;
+            border-right: 30px solid transparent;
+        }
+    }
+
+}
+
+.flow-right {
+    width: 70%;
+    padding: 2%;
+}
+
+@include m.pc2 {
+
+    .flow-left,
+    .flow-right {
+        width: 100%;
+    }
+}
+
+
+/* 右側共通装飾 */
+.application-bg-blue {
+    background-color: #0EA5E950;
+}
+
+.bbp {
+    border: 1px solid;
+    border-radius: 5px;
+    margin-top: 16px;
+    padding: 2%;
+}
+
+.mt-none {
+    margin-top: 0;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.flow-text {
+    border: 3px dotted #0EA5E9;
+    border-radius: 5px;
+    padding: 2%;
+}
+
+/* 出願 */
+.application {
+    display: flex;
+    gap: 2%;
+}
+
+
+.application-left,
+.application-right {
+    width: 50%;
+    background-color: #0EA5E950;
+}
+
+@include m.tab {
+    .application {
+        flex-direction: column;
+    }
+
+    .application-left,
+    .application-right {
+        width: 100%;
+    }
+}
+
+.application-title {
+    text-align: center;
+}
+
+#cost {
+    .page-message-title {
+        text-align: left;
+        font-size: 2rem;
+        margin-block: 32px 8px;
+    }
+
+    .sec-title {
+        margin-block: 32px;
+        padding-inline: 2%;
+    }
+}
+
+#cost {
+    .other-texts {
+        .page-message-title {
+            margin-bottom: 2px;
+        }
+    }
+}
+
+@include m.sp {
+    #cost {
+        .border-light {
+            border: none;
+        }
+    }
+}
+
+table {
+    width: 98%;
+    border-collapse: collapse;
+    font-size: 1.6rem;
+    margin-inline: auto;
+}
+
+th,
+td {
+    border: 1px solid;
+    padding: 8px;
+}
+
+.border-top-none {
+    border-top: none;
+}
+
+.red-red {
+    border: 3px solid;
+    background: green;
+}
+
+.other-course {
+    border-top: none;
 }

@@ -1,0 +1,219 @@
+@use "_mixin.scss" as m;
+
+/* ------------------------------
+page共通
+------------------------------ */
+#access,
+#activity,
+#course,
+#graduation,
+#greeting,
+#life,
+#single,
+#picup,
+#support,
+#campus,
+#article,
+#contact-form,
+#cost,
+#voice {
+    padding-block: 40px;
+}
+
+.page-wrapper {
+    max-width: 90%;
+    background-color: #fff;
+    margin-inline: auto;
+    padding-inline: 2%;
+}
+
+.page-visual {
+    width: 98%;
+    margin-inline: auto;
+
+    img {
+        width: 100%;
+    }
+}
+
+/* 太帯・黒太文字 */
+.page-title {
+    width: 98%;
+    text-align: center;
+    background-color: #0EA5E9;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #333;
+    border-radius: 10px;
+    padding-block: 8px;
+    padding-inline: 2%;
+    margin-bottom: 32px;
+    margin-inline: auto;
+}
+
+/* 太帯・白太文字 */
+.page-sub-title {
+    width: 98%;
+    text-align: center;
+    background-color: #0EA5E9;
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 10px;
+    padding-block: 8px;
+    margin-inline: auto;
+    margin-block: 32px;
+}
+
+/* 太帯・白文字 */
+.page-sub-title-light {
+    width: 98%;
+    text-align: center;
+    background-color: #FDBA74;
+    font-size: 1.8rem;
+    color: #fff;
+    border-radius: 10px;
+    padding-block: 8px;
+    margin-inline: auto;
+    margin-block: 32px;
+}
+
+/* デフォルトの文字 */
+.page-text {
+    width: 98%;
+    font-size: 1.6rem;
+    margin-top: 24px;
+    margin-inline: auto;
+}
+
+/* 外側の線デフォルト */
+.border-light {
+    border: 1px solid #0EA5E9;
+    padding-bottom: 40px;
+    margin-top: 40px;
+
+    &:last-of-type {
+        margin-bottom: 0;
+    }
+}
+
+/* ・始まりリスト */
+.normal-list {
+    width: 96%;
+    list-style: inside;
+    font-size: 1.6rem;
+    margin-inline: auto;
+}
+
+/* ・始まり色付きリスト */
+.color-list {
+    width: 98%;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 4px;
+    margin-inline: auto;
+
+
+    &::before {
+        content: "・";
+        color: #FDE047;
+    }
+}
+
+/* 色付きリストの文章エリア */
+.list-texts {
+    margin-bottom: 32px;
+
+    .page-text {
+        margin-top: 0;
+    }
+}
+
+/* ------------------------------
+タイトル
+------------------------------ */
+.sec-title {
+    text-align: center;
+    margin-block: 64px;
+
+    span {
+        display: block;
+    }
+
+    .main-title {
+        font-size: 4.8rem;
+        border-bottom: 4px dotted #0EA5E9;
+    }
+
+    .ja {
+        border-bottom: 4px dotted #fff;
+    }
+
+    .sub-title {
+        font-size: 2.4rem;
+        font-weight: normal;
+        margin-top: 8px;
+    }
+}
+
+@include m.sp {
+    .sec-title {
+        margin-block: 0 40px;
+
+        .main-title {
+            font-size: 4rem;
+        }
+
+        .sub-title {
+            font-size: 2rem;
+        }
+    }
+}
+
+/* ------------------------------
+花の背景装飾
+------------------------------ */
+.bg {
+    background-repeat: repeat;
+    background-size: auto;
+    /* 必要に応じて contain / cover */
+    background-position: center;
+}
+
+.bg-blue {
+    background-image: url("../img/bg-blue.png");
+}
+
+.bg-orange {
+    background-image: url("../img/bg-orange.png");
+}
+
+.bg-green {
+    background-image: url("../img/bg-green.png");
+}
+
+.bg-pink {
+    background-image: url("../img/bg-pink.png");
+}
+
+.p-block {
+    padding-block: 200px 40px;
+}
+
+@include m.pc {
+    .p-block {
+        padding-block: 140px 40px;
+    }
+}
+
+@include m.tab {
+    .p-block {
+        padding-block: 100px 40px;
+    }
+}
+
+@include m.sp {
+    .p-block {
+        padding-block: 80px 40px;
+    }
+}

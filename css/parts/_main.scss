@@ -1,6 +1,29 @@
 @use "_mixin.scss" as m;
 
 /* ------------------------------
+メインビジュアル
+------------------------------ */
+
+#mainvisual {
+    width: 100vw;
+    position: relative;
+    margin-top: 130px;
+}
+
+@include m.pc {
+    #mainvisual {
+        margin-top: 60px;
+    }
+}
+
+@include m.sp {
+    #mainvisual {
+        margin-top: 40px;
+    }
+}
+
+
+/* ------------------------------
 西日暮里キャンパスメッセージ
 ------------------------------ */
 #message-area {
@@ -460,48 +483,6 @@ rainbowスライダー
 /* ------------------------------
 information
 ------------------------------ */
-/* #information {
-    padding-block: 64px 128px;
-}
-
-.information-list {
-    width: 96%;
-    margin-inline: auto;
-    margin-bottom: 40px;
-
-    a {
-        font-size: 1.6rem;
-        color: #333;
-    }
-
-    .article-category {
-        padding: 4px 16px;
-        background-color: #0EA5E9;
-        border-radius: 5px;
-        color: #fff;
-        margin-left: 16px;
-    }
-
-    .article-title {
-        padding-block: 16px 4px;
-        border-bottom: 2px dotted #0EA5E9;
-    }
-}
-
-.information-list li {
-    margin-block: 16px;
-
-    &:hover {
-        .shine-category {
-            background-color: #0E45E9;
-        }
-
-        .article-title {
-            border-bottom: 3px dotted#0E45E9;
-        }
-    }
-} */
-
 #information {
     padding-block: 64px 128px;
 }
@@ -564,7 +545,6 @@ movie
         padding-block: 40px;
     }
 }
-
 
 .youtube-inner {
     max-width: 800px;
@@ -648,7 +628,6 @@ voice-area
         text-align: left;
     }
 }
-
 
 .voice-texts {
     border-bottom: 4px dotted #0EA5E9;
@@ -808,6 +787,110 @@ voices-area手動スライド
             right: -10px;
         }
     }
+}
+
+/* voiceスライド */
+.voice-items {
+    margin-bottom: 40px;
+}
+
+
+/* ------------------------------
+voice-page(ご利用者の声)
+------------------------------ */
+#voice-block {
+    .voice-items {
+        max-width: 100%;
+    }
+
+    .voice-item {
+        width: 98%;
+        border: 1px solid #e0dfdf;
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.25);
+        margin-bottom: 40px;
+        margin-inline: auto;
+        padding-block: 52px;
+
+        .profile-names {
+            font-weight: bold;
+            color: #0EA5E9;
+        }
+    }
+}
+
+.voice-anchor {
+
+    &::before {
+        content: "";
+        display: block;
+        height: 200px;
+        margin-top: -200px;
+        visibility: hidden;
+    }
+}
+
+@include m.sp {
+    #voice-block {
+        .voice-item {
+            padding-inline: 8px;
+        }
+    }
+}
+
+.profile-block {
+    display: flex;
+    align-items: center;
+    border-bottom: 4px dotted #0EA5E9;
+    padding-bottom: 16px;
+    margin-bottom: 24px;
+
+    img {
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+        border-radius: 15px;
+        margin-right: 16px;
+    }
+}
+
+@include m.tab {
+    .profile-block {
+        flex-direction: column;
+
+        img {
+            width: 80px;
+            height: 80px;
+        }
+    }
+}
+
+.profile-texts {
+    .voice-title {
+        font-size: 2.4rem;
+        font-weight: bold;
+        line-height: 1.2;
+        color: #0EA5E9;
+        margin-bottom: 8px;
+    }
+}
+
+@include m.tab {
+    .profile-texts {
+        .voice-title {
+            font-size: 2rem;
+            margin-top: 16px;
+        }
+    }
+}
+
+.question-answer-title {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.question-text {
+    font-weight: bold;
+    margin-block: 16px 4px;
 }
 
 /* ------------------------------
