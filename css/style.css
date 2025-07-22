@@ -292,21 +292,20 @@ header-btn
 }
 
 /* ------------------------------
-contents-btn
+アイコンありボタン
 ------------------------------ */
-/* .contents-btn {
-    color: #0EA5E9;
-    border: 2px solid #0EA5E9;
+.contents-btn {
+  color: #0EA5E9;
+  border: 2px solid #0EA5E9;
+}
+.contents-btn:hover {
+  background-color: #0EA5E9;
+  color: #fff;
+}
+.contents-btn i {
+  margin-right: 8px;
+}
 
-    &:hover {
-        background-color: #0EA5E9;
-        color: #fff;
-    }
-
-    i {
-        margin-right: 8px;
-    }
-} */
 /* ------------------------------
 アイコンなしボタン
 ------------------------------ */
